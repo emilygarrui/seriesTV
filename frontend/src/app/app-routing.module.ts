@@ -11,6 +11,14 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'my-series',
+    loadChildren: () => import('./my-series/my-series.module').then( m => m.MySeriesPageModule)
+  },
+  {
+    path: 'serie-form',
+    loadChildren: () => import('./serie-form/serie-form.module').then( m => m.SerieFormPageModule)
+  },
 ];
 
 @NgModule({
