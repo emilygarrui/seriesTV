@@ -17,9 +17,19 @@ export class MySeriesPage implements OnInit {
     this.getAllSeries();
   }
 
+  ionViewWillEnter() {
+    this.getAllSeries();
+  }
+
   getAllSeries() {
     this.serieService.getSeries().subscribe(response => {
       this.series = response;
+    });
+  }
+
+  deleteSerie(id: any) {
+    this.serieService.deleteSerie(id).subscribe(() => {
+      this.getAllSeries();
     });
   }
 }

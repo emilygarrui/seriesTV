@@ -25,4 +25,8 @@ export class SerieService {
 
     return this.httpClient.post(this.serverUrl, body.toString(), { headers });
   }
+
+  deleteSerie(id: any){
+   return this.httpClient.delete(`${this.serverUrl}/${id}`);
+  }
 }
