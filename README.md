@@ -28,18 +28,23 @@ The user interface follows a **consistent dark theme**, with centered forms and 
 1. Clone the repository:
 
 ```bash
-# Clone the repository
 git clone https://github.com/yourusername/series-tv.git
 cd series-tv
+```
 
-# Install dependencies
+2. Install all dependencies:
+
+```bash
 npm install
+```
 
-# Make sure your backend server is running at http://localhost:8080
-# (Adjust the URL in `serie-service.ts` if needed)
+3. Make sure your backend server is running at http://localhost:8080. (Adjust the URL in `serie-service.ts` if needed)
 
-# Start the app
+4. Start the app
+``` bash
 ionic serve
+```
+
 ## Project Structure
 
 src/
@@ -65,7 +70,7 @@ Copiar código
 
 You can test the API endpoints using **Postman**:
 
-[SeriesTV Postman Collection](https://www.postman.com/your-postman-collection-link)
+[SeriesTV Postman Collection](https://documenter.getpostman.com/view/48969121/2sB3QGuBbg)
 
 > Make sure the backend server is running before testing the endpoints.
 
@@ -80,6 +85,7 @@ You can test the API endpoints using **Postman**:
 
 ---
 
-## License
+## Author
 
-MIT License
+**Emily García Ruiz**
+GitHub: [https://github.com/emilygarrui]
