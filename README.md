@@ -29,7 +29,6 @@ The user interface follows a **consistent dark theme**, with centered forms and 
 
 ```bash
 git clone https://github.com/emilygarrui/seriesTV.git
-cd series-tv
 ```
 
 2. Install all dependencies:
