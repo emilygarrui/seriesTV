@@ -46,7 +46,7 @@ ionic serve
 ```
 
 ## Project Structure
-
+``` bash
 src/
 ├─ app/
 │ ├─ home/
@@ -55,9 +55,7 @@ src/
 │ ├─ services/
 │ │ └─ serie-service.ts
 │ └─ app.module.ts
-
-yaml
-Copiar código
+```
 
 - `home/` → Welcome page with description and button to view all series.  
 - `my-series/` → Page listing all series, with buttons to edit or delete each one.  
@@ -88,4 +86,4 @@ You can test the API endpoints using **Postman**:
 ## Author
 
 **Emily García Ruiz**
-GitHub: [https://github.com/emilygarrui]
+- GitHub: [https://github.com/emilygarrui]
