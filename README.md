@@ -28,7 +28,7 @@ The user interface follows a **consistent dark theme**, with centered forms and 
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/series-tv.git
+git clone https://github.com/emilygarrui/seriesTV.git
 cd series-tv
 ```
 
