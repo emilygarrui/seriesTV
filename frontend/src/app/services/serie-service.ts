@@ -6,7 +6,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class SerieService {
 
-  serverUrl ='http://localhost:8080/api/series';
+  serverUrl = 'http://localhost:8080/api/series';
 
   constructor(private httpClient: HttpClient) { }
 
@@ -16,17 +16,23 @@ export class SerieService {
 
   createSerie(serie: any) {
     const headers = new HttpHeaders({
-      'Content-Type': 'application/x-www-form-urlencoded'
+      'Content-Type': 'application/json'
     });
-
-    const body = new URLSearchParams();
-    body.append('title', serie.title);
-    body.append('genre', serie.genre);
-
-    return this.httpClient.post(this.serverUrl, body.toString(), { headers });
+    return this.httpClient.post(this.serverUrl, JSON.stringify(serie), { headers });
   }
 
-  deleteSerie(id: any){
-   return this.httpClient.delete(`${this.serverUrl}/${id}`);
+  updateSerie(id: string, serie: any) {
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/json'
+    });
+    return this.httpClient.put(`${this.serverUrl}/${id}`, JSON.stringify(serie), { headers });
+  }
+
+  deleteSerie(id: any) {
+    return this.httpClient.delete(`${this.serverUrl}/${id}`);
+  }
+
+  getSerieById(id: string) {
+    return this.httpClient.get(`${this.serverUrl}/${id}`);
   }
 }

@@ -1,0 +1,39 @@
+ion-content {
+  --background: #1e1e1e;
+  padding: 1rem;
+}
+
+ion-list {
+  background: transparent !important;
+}
+
+ion-item {
+  --background: #2e2e2e !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  margin-bottom: 0.8rem;
+  border: none;
+}
+
+ion-label h1 {
+  color: #ffcc00;
+  font-size: 1.2rem;
+  margin-bottom: 0.2rem;
+}
+
+ion-label p {
+  color: #ccc;
+  font-size: 1rem;
+}
+
+ion-button {
+  margin-left: 0.5rem;
+}
+
+ion-button {
+  --background: #ffcc00;
+  font-weight: bold;
+  --color: #1e1e1e;
+  border-radius: 8px;
+  margin-top: 1rem;
+}

@@ -1,21 +1,10 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div>
-    <h1 class="title">Title: {{title}}</h1>
-    <p>Genre: {{genre}}</p>
+  <div class="home-container">
+    <h1 class="title">Welcome to SeriesTV!</h1>
+    <p class="description">
+      This app lets you explore your favorite TV series,
+      check their genres, and manage your own collection.
+    </p>
+    <ion-button expand="block" (click)="goToMySeries()">Show all series</ion-button>
   </div>
-  <ion-button expand="block" (click)="goToMySeries()">Show all series</ion-button>
 </ion-content>

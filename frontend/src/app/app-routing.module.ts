@@ -19,6 +19,10 @@ const routes: Routes = [
     path: 'serie-form',
     loadChildren: () => import('./serie-form/serie-form.module').then( m => m.SerieFormPageModule)
   },
+  {
+  path: 'serie-form/:id',
+  loadChildren: () => import('./serie-form/serie-form.module').then(m => m.SerieFormPageModule)
+},
 ];
 
 @NgModule({
